@@ -27,7 +27,7 @@
 ![p4](./example/p4.png "p4")
 4. 存在本地记录时，“寻访统计”页面默认显示默认用户。
 5. 存在本地记录时，可以通过输入“用户名”切换账号查看。
-![g1](./example/g1.gif "g1")
+![g1](https://github.com/chptbtptp/Arknights_trailing/blob/main/example/g1.gif)
 
 
 
