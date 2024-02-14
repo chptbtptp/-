@@ -19,12 +19,12 @@
 
 ## 示例
 1. 不输入“用户名”时，为默认用户。输入“登录凭证”，点击“确认提交”。
-![p1](./example/p1.png "p1")
+![p1](https://github.com/chptbtptp/Arknights_trailing/blob/main/example/p1.png)
 2. 提示“提交成功”后，点击左侧“寻访统计”，查看寻访信息。
-![p2](./example/p2.png "p2")
+![p2](https://github.com/chptbtptp/Arknights_trailing/blob/main/example/p2.png)
 3. 输入“用户名”与相应“登录凭证”，可以查看其他账号寻访信息。
-![p3](./example/p3.png "p3")
-![p4](./example/p4.png "p4")
+![p3](https://github.com/chptbtptp/Arknights_trailing/blob/main/example/p3.png)
+![p4](https://github.com/chptbtptp/Arknights_trailing/blob/main/example/p4.png)
 4. 存在本地记录时，“寻访统计”页面默认显示默认用户。
 5. 存在本地记录时，可以通过输入“用户名”切换账号查看。
 ![g1](https://github.com/chptbtptp/Arknights_trailing/blob/main/example/g1.gif)
