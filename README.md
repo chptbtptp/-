@@ -38,4 +38,3 @@
 
 python实现，代码都放在github上了，用了[PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)组件库
 
-感觉说了一堆废话)...敲代码的时候觉得还好，敲完之后觉得进行了一项毫无意义的工作。估计是没人会用啦~有bug我会考虑修的，有什么想加的功能也可以提一提，没准我就加了呢...(给我发叔叔涩图，让叔叔色诱我，我就一定改!

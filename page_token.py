@@ -55,6 +55,7 @@ def get_record(token, all_page, username):
 
         # logger.debug("ts & ddl: " + str(j['data']['list']) + ", " + str(ddl))
         if ((len(j['data']['list']) == 0) or (j['data']['list'][0]['ts'] <= ddl)):
+            # 不存在新记录
             break
 
         for i in j['data']['list']:
@@ -66,15 +67,20 @@ def get_record(token, all_page, username):
 
             for j in chars:
                 # logger.debug(j)
-                record.append({'ts': ts, 'pool': pool, 'name': j['name'], 'rarity': j['rarity'], 'isNew': j['isNew']})
-                # logger.debug(record[num])
-                num = num + 1
+                if (ts > ddl): 
+                    # 只保存新记录
+                    record.append({'ts': ts, 'pool': pool, 'name': j['name'], 'rarity': j['rarity'], 'isNew': j['isNew']})
+                    # logger.debug(record[num])
+                    num = num + 1
+
                 
     if ((len(record) != 0) and (ddl == 0)):
+        # 存在新记录 且 不存在本地记录
         json_dict = json.dumps(record, indent=2, sort_keys=False, ensure_ascii=False) # 写为多行
         with open(username + "_record_json.json", "w", encoding='utf-8') as f:
             f.write(json_dict)
     elif ((len(record) != 0) and (ddl != 0)):
+        # 存在新记录 且 存在本地记录
         with open(username + '_record_json.json', "r+", encoding='utf-8') as f:
             old = json.loads(f.read())
             f.seek(0)
